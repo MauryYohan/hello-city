@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block title %}¡Hola de Perú!{% endblock %}
+
+{% block body %}
+    <h1>¡Hola de Perú!</h1>
+    <p class="important">
+        Hora actual : {{ 'now'|date('h:i A') }}
+    </p>
+
+    <footer>
+        {% block footer %}
+            <p>
+                &copy; Copyright {{ 'now'|date('Y') }} &middot; <a href="#">About Us</a>
+            </p>
+        {% endblock %}
+    </footer>
+
+{% endblock %}
