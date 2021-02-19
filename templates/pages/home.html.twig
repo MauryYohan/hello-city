@@ -3,17 +3,10 @@
 {% block title %}¡Hola de Perú!{% endblock %}
 
 {% block body %}
-    <h1>¡Hola de Perú!</h1>
-    <p class="important">
+    <img src=" {{ asset('/img/Flag_Peru.png') }} " alt="Peru Flag" width="300" class="mt-12 rounded shadow-md">
+    <h1 class="mt-5 text-3xl sm:text-5xl font semibold"> <span class="text-red-500">¡Hola de Perú!</span></h1>
+    <p class="text-lg text-gray-600">
         Hora actual : {{ 'now'|date('h:i A') }}
     </p>
-
-    <footer>
-        {% block footer %}
-            <p>
-                &copy; Copyright {{ 'now'|date('Y') }} &middot; <a href="#">About Us</a>
-            </p>
-        {% endblock %}
-    </footer>
 
 {% endblock %}

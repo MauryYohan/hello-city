@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block title 'About us | ' ~ parent() %}
+
+{% block body %}
+    <img src=" {{ asset('/img/avatar_yohan.png') }} " alt="Avatar" class="my-12 rounded-full shadow-md">
+
+    <h1 class="text-gray-700 mt-5 text-2xl sm:text-3xl font semibold">Build with <span class="text-pink-500">&hearts;</span> by Yohan Maury</h1>
+    <p class="mt-5"> 
+        <a href="{{ path("app_home") }}" class="text-indigo-400 hover:text-indigo-600 underline"> Revenir a la page d'accueil</a> 
+    </p>
+
+
+{% endblock %}
